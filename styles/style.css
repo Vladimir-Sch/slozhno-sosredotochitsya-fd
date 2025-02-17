@@ -1,10 +1,10 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .page {
-  font-family: 'IBM Plex mono', sans-serif;
+  font-family: 'IBM Plex mono', monospace;
   font-size: 18px;
   line-height: 23.4px;
   font-weight: 400;
-  background-color: var(--bg_color);
+  background-color: var(--bg_color, #000028);
   background-image: var(--bg_image);
   background-size: cover;
   background-position: center;
@@ -78,8 +78,10 @@ h2, h3, h4 {
 
 .header__theme-menu-button:focus {
   outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
   border-block-end: 1px solid var(--button_color);
-  
 }
 
 .header__theme-menu-button_active {
@@ -187,10 +189,11 @@ h2, h3, h4 {
 .article_link:hover {
   border-block-end: 1px solid var(--text_color);
 }
-
 .article_link:focus {
-  border: 1px solid var(--text_color);
   outline: none;
+}
+.article_link:focus-visible {
+  border: 1px solid var(--text_color);
   text-decoration-color: var(--text_color);
 }
 
@@ -270,20 +273,20 @@ h2, h3, h4 {
     padding: 60px 20px;
   }
 
-  .section_1 {
+  .section_why_concentrate {
     grid-template-columns: 1fr 2fr;
   }
 
-  .section_2 {
+  .section_what_concentrate {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto auto;
     gap: 20px;
   }
-  .section_2_pattern {
+  .section_what_concentrate_pattern {
     grid-column: span 2;
   }
 
-  .section_3 {
+  .section_concentrate_like_fish {
     grid-template-columns: 1fr 2fr;
   }
 
@@ -360,19 +363,19 @@ h2, h3, h4 {
     grid-template-rows: min-content;
   }
 
-  .section_1 {
+  .section_why_concentrate {
     gap: 10px;
   }
 
-    .section_2 {
+    .section_what_concentrate {
     grid-template-rows: min-content 1fr;
   }
 
-  .section_3 {
+  .section_concentrate_like_fish {
     gap: 10px;
   }
 
-  .section_2_pattern {
+  .section_what_concentrate_pattern {
     grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
   }
 
