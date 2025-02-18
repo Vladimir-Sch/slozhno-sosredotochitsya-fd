@@ -273,21 +273,16 @@ h2, h3, h4 {
     padding: 60px 20px;
   }
 
-  .section_why_concentrate {
+  .section {
     grid-template-columns: 1fr 2fr;
   }
 
-  .section_what_concentrate {
-    grid-template-columns: 1fr 2fr;
+  .section_content_horizontal {
     grid-template-rows: auto auto;
     gap: 20px;
   }
-  .section_what_concentrate_pattern {
+  .section_content_horizontal_pattern {
     grid-column: span 2;
-  }
-
-  .section_concentrate_like_fish {
-    grid-template-columns: 1fr 2fr;
   }
 
   .section_image_gallery {
@@ -363,19 +358,15 @@ h2, h3, h4 {
     grid-template-rows: min-content;
   }
 
-  .section_why_concentrate {
+  .section_content_vertical {
     gap: 10px;
   }
 
-    .section_what_concentrate {
+  .section_content_horizontal {
     grid-template-rows: min-content 1fr;
   }
 
-  .section_concentrate_like_fish {
-    gap: 10px;
-  }
-
-  .section_what_concentrate_pattern {
+  .section_content_horizontal_pattern {
     grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
   }
 
